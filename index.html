@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>Swapi Starships - OJ Tayo</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link type="text/css" rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+        <h1 class="title">Swapi Starships Assessment</h1>
+        <p class="author">By <a href="https://ojtayo.com/" target="_blank" class="author__link">OJ Tayo</a></p>
+        <div class="starships">
+            <div class="starships__buttons">
+               <button id="fetchStarships" class="btn">Fetch Starships</button>
+               <select id="sortStarshipsBy" class="dropdown" disabled>
+                   <option selected disabled value="">----  Sort By  ----</option>
+                   <option value="name">Name</option>
+                   <option value="model">Model</option>
+                   <option value="manufacturer">Manufacturer</option>
+                   <option value="cost_in_credits">Cost in Credits</option>
+                   <option value="length">Length</option>
+                   <option value="passengers">Passengers</option>
+                   <option value="cargo_capacity">Cargo Capacity</option>
+               </select>
+            </div>
+            <div class="starship-table">
+                <!-- categories -->
+                <div class="starship-table__row starship-table__row--categories">
+                    <div class="starship-table__column">Name</div>
+                    <div class="starship-table__column">Model</div>
+                    <div class="starship-table__column">Manufacturer</div>
+                    <div class="starship-table__column">Cost in credits</div>
+                    <div class="starship-table__column">Length</div>
+                    <div class="starship-table__column">Passengers</div>
+                    <div class="starship-table__column">Cargo capacity</div>
+                </div>
+                <!-- table for starships to be populated in  -->
+                <div id="starshipData"></div>
+            </div>
+         </div>
+      <script src="js/script.js"></script>
+   </body>
+</html>
